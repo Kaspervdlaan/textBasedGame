@@ -1,5 +1,44 @@
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Calibri, serif;
+}
+
+body {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: darkslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.button:hover {
+    border-color: cadetblue;
 }
